@@ -1,3 +1,6 @@
+// 👻 Developed by DanBi Choi on July 19th, 2023.
+// -----------------------------------------------------
+
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 // --------------------------------------------------------
@@ -40,7 +43,7 @@ $desktop-font-xlarge: 32px;
 }
 
 @mixin desktop {
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1170px) {
         @content;
     }
 }
@@ -54,6 +57,7 @@ $desktop-font-xlarge: 32px;
     font-family: $font-text;
     color: $color-black;
     list-style: none;
+    $desktop-font-small: 14px;
 }
 
 .btn-primary {
@@ -69,6 +73,22 @@ $desktop-font-xlarge: 32px;
     &:hover,
     &:active {
         background-color: #481160 !important;
+    }
+}
+
+.btn-outline-primary {
+    border: $color-purple;
+    border-radius: 5px;
+    background-color: transparent;
+    color: $color-purple;
+    font-size: $desktop-font-medium;
+    font-weight: 600;
+    padding: 12px 30px;
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+        background-color: transparent !important;
     }
 }
 
@@ -110,8 +130,15 @@ a:active {
     color: $color-black;
     text-decoration: none;
 }
-// End common css styles : added by Danbi on July 18th, 2023
 
 body {
     background-color: $background-color-white;
+    overflow-x: hidden;
 }
+
+::selection {
+    background-color: $color-yellow;
+    color: $color-black;
+}
+
+// End common css styles : added by Danbi on July 18th, 2023
