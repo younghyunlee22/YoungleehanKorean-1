@@ -1,3 +1,6 @@
+// 👻 Developed by DanBi Choi on July 19th, 2023.
+// -----------------------------------------------------
+
 export default function Jumbotron({
     title,
     directory = null,
@@ -9,7 +12,13 @@ export default function Jumbotron({
     return (
         <>
             <div style={{ width: "100vw", backgroundColor: "#f6f4ee" }}>
-                <div style={{ maxWidth: "1170px", margin: "auto" }}>
+                <div
+                    style={{
+                        maxWidth: "1170px",
+                        margin: "auto",
+                        padding: "0 10px 0 10px",
+                    }}
+                >
                     <h1
                         style={{
                             fontWeight: "700",
