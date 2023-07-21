@@ -5,6 +5,7 @@ import Footer from "../src/components/nav/Footer";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import List from "./pages/BlogList";
 
 const PageNotFound = () => {
     return (
@@ -24,6 +25,7 @@ export default function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
+                <Route path="/blog-list" element={<List />} />
                 <Route path="*" element={<PageNotFound />} />
             </Routes>
             <Footer />
