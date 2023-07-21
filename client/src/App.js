@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import PageNotFound from "./pages/PageNotFound";
+import BlogList from "./pages/BlogList";
 
 export default function App() {
     return (
@@ -14,7 +15,7 @@ export default function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/login" element={<Login />} />
-                <Route path="/blog-list" element={<List />} />
+                <Route path="/blog-list" element={<BlogList />} />
                 <Route path="/register" element={<Register />} />
                 <Route path="*" element={<PageNotFound />} />
             </Routes>
