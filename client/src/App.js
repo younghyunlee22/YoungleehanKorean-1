@@ -5,17 +5,7 @@ import Footer from "../src/components/nav/Footer";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import List from "./pages/BlogList";
-
-const PageNotFound = () => {
-    return (
-        <>
-            <div className="d-flex justify-content-center align-items-center">
-                404 | Page not found
-            </div>
-        </>
-    );
-};
+import PageNotFound from "./pages/PageNotFound";
 
 export default function App() {
     return (
@@ -24,8 +14,8 @@ export default function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/login" element={<Login />} />
-                <Route path="/register" element={<Register />} />
                 <Route path="/blog-list" element={<List />} />
+                <Route path="/register" element={<Register />} />
                 <Route path="*" element={<PageNotFound />} />
             </Routes>
             <Footer />
